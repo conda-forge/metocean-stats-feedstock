@@ -32,6 +32,9 @@ requirements:
     - metocean-api
     - pyextremes
     - virocon
+    - scikit-learn
+    - keras
+    - tensorflow
 
 test:
   imports:
