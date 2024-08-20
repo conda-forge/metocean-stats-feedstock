@@ -1,5 +1,5 @@
 {% set name = "metocean-stats" %}
-{% set version = "0.1.7" %}
+{% set version = "1.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -35,7 +35,7 @@ requirements:
     - scikit-learn
     - keras
     - tensorflow
-
+    - cartopy
 test:
   imports:
     - metocean_stats
