@@ -24,18 +24,14 @@ requirements:
     - xarray
     - matplotlib-base >=3.1
     - numpy >=1.17
-    - pandas
+    - pandas >=2.2.1
     - scipy
     - pytest
     - windrose
     - seaborn >=0.12.2
-    - metocean-api
     - pyextremes
-    - virocon
-    - scikit-learn
-    - keras
-    - tensorflow
     - cartopy
+    - python-docx
 test:
   imports:
     - metocean_stats
@@ -47,8 +43,8 @@ test:
 about:
   home: https://github.com/MET-OM/metocean-stats
   summary: 'Package for metocean statistics of hindcast/reanalysis data'
-  license: GPL-3.0-or-later
-  license_family: GPL
+  license: LGPLv3
+  license_family: LGPL
   license_file: LICENSE
   doc_url: https://metocean-stats.readthedocs.io/
   dev_url: https://github.com/MET-OM/metocean-stats
