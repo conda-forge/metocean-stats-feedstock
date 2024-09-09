@@ -17,8 +17,8 @@ build:
 requirements:
   host:
     - python >=3.9
-    - setuptools
     - pip
+    - setuptools-scm
   run:
     - python >=3.9
     - xarray
