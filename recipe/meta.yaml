@@ -1,5 +1,5 @@
 {% set name = "metocean-stats" %}
-{% set version = "1.0.0" %}
+{% set version = "1.0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 101221e3df1a28144fce8a7b6503204ccbdb059c3cd2ccdecea8799af8b59efb
+  sha256: 13eb4ae333673fb2eb1af319e76fa4d5eff876e8e2c3887a0d095a1a0b4a509a
 
 build:
   noarch: python
@@ -17,25 +17,22 @@ build:
 requirements:
   host:
     - python >=3.9
-    - setuptools-scm
     - pip
+    - setuptools
+    - setuptools-scm
   run:
     - python >=3.9
     - xarray
     - matplotlib-base >=3.1
     - numpy >=1.17
-    - pandas
+    - pandas >=2.2.1
     - scipy
     - pytest
     - windrose
     - seaborn >=0.12.2
-    - metocean-api
     - pyextremes
-    - virocon
-    - scikit-learn
-    - keras
-    - tensorflow
     - cartopy
+    - python-docx
 test:
   imports:
     - metocean_stats
@@ -47,8 +44,8 @@ test:
 about:
   home: https://github.com/MET-OM/metocean-stats
   summary: 'Package for metocean statistics of hindcast/reanalysis data'
-  license: GPL-3.0-or-later
-  license_family: GPL
+  license: LGPL-2.0-only
+  license_family: LGPL
   license_file: LICENSE
   doc_url: https://metocean-stats.readthedocs.io/
   dev_url: https://github.com/MET-OM/metocean-stats
