@@ -1,5 +1,5 @@
 {% set name = "metocean-stats" %}
-{% set version = "1.0.3" %}
+{% set version = "1.0.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 799c70ddb954713469c445c42640a0bddba83981924d69f856ca8ac813353800
+  sha256: e157c1abf8adb791a31165563b7cd06ab62a2defca166b35987996b1c2c4f68d
 
 build:
   noarch: python
