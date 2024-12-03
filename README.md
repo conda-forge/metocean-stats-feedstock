@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/metocean-stats-
 
 Home: https://github.com/MET-OM/metocean-stats
 
-Package license: LGPL-3.0
+Package license: LGPL-2.0-only
 
 Summary: Package for metocean statistics of hindcast/reanalysis data
 
