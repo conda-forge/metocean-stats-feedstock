@@ -12,16 +12,16 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - pip
     - setuptools
     - setuptools-scm
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - xarray
     - matplotlib-base >=3.1
     - numpy >=1.17
@@ -40,6 +40,7 @@ test:
     - metocean_stats
   requires:
     - pip
+    - python {{ python_min }}
   commands:
     - pip check
 
